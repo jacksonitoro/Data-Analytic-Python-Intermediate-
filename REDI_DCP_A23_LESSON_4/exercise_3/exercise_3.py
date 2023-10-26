@@ -1,0 +1,34 @@
+# Here we are reading a json file into a python dictonary. Reading and writing files will be covered in another lesson.
+import json
+
+with open("REDI_DCP_A23_LESSON_4\exercise_3\data.json", "r") as file:
+    file_content = file.read()
+    quotes = json.loads(file_content)
+
+# The variable qoutes is a dictornary containing all the information.
+# Have a look in the data.json file to see the key value pairs or print the dictonary
+# 1. Print all quotes with auther.
+#
+# Result:
+# The chief task in life is simply this: to identify and separate matters so that I can say clearly to myself which are externals not under my control, and which have to do with the choices I actually control. Where then do I look for good and evil? Not to uncontrollable externals, but within myself to the choices that are my own ...
+# by Epictetus
+#
+# ...
+# Add a empty line in between quotes
+#
+number_of_quotes = len(quotes['quotes'])
+for i in range(number_of_quotes):
+# Write your code here
+<<<<<<< HEAD
+    quote=quotes['quotes'][i]['quote']
+    author=quotes['quotes'][i]['author']
+
+print(quote,author)
+
+=======
+list_of_quotes = quotes["quotes"]
+for i in range(len(list_of_quotes)):
+    quote = list_of_quotes[i]["quote"]
+    author = list_of_quotes[i]["author"]
+    print(f"{quote}\nby {author}\n")
+>>>>>>> 62be41add9d3189d4ffd1faa885dfff2097219c6

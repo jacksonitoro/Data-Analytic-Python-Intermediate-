@@ -1,0 +1,67 @@
+import random
+
+class Train:
+    def __init__(self, num_wagons, direction):
+        self.num_wagons = num_wagons
+        self.direction = direction
+    
+    def go(self):
+        print(f"Train is going {self.direction}")
+    
+    def specifications(self):
+        print(f"Train specifications:\n\tNumber of wagons: {self.num_wagons}\n\tTrain direction: {self.direction}")
+    
+    @staticmethod
+    def average_speed(time, distance):
+        avg_speed = distance/time
+        return avg_speed
+
+class StopLight:
+    def __init__(self, state="Red"):
+        self.state = state
+    
+    def change_state(self):
+        if self.state == "Red":
+            self.state = "Green"
+        else:
+            self.state = "Red"
+    
+    def get_state(self):
+        return self.state
+
+# class Station:
+#     def __init__(self, train1, train2):
+#         #TODO
+# 	    return None
+    
+#     def change_light_state(self):
+#         #TODO
+# 	    return None
+    
+#     def random_train_go(self):
+#         #TODO
+# 	    return None
+    
+#     @staticmethod
+#     def join_trains(trainA, trainB):
+#         #TODO
+#         return None
+
+class Station:
+    def __init__(self, train1, train2):
+        #TODO
+        return None
+    
+    def change_light_state(self):
+        #TODO
+        return None
+    
+    def random_train_go(self):
+        #TODO
+        return None
+    
+    @staticmethod
+    def join_trains(trainA,trainB):
+        #TODO
+        return  None
+        
